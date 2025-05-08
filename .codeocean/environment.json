@@ -1,0 +1,28 @@
+{
+	"version": 1,
+	"base_image": "codeocean/pytorch-tensorflow-jax:2.1",
+	"options": {
+		"registry_host_arg": true,
+		"git_ask_pass": true
+	},
+	"installers": {
+		"pip": {
+			"packages": [
+				{
+					"name": "matplotlib",
+					"version": "3.10.1"
+				},
+				{
+					"name": "scikit-learn",
+					"version": "1.6.1"
+				},
+				{
+					"name": "scipy",
+					"version": "1.15.2"
+				}
+			],
+			"options": {},
+			"pre_install_options": {}
+		}
+	}
+}
