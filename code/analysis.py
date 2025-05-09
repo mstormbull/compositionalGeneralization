@@ -11,10 +11,10 @@ from sklearn.metrics import r2_score, mean_squared_error
 from sklearn.model_selection import train_test_split # For splitting decoder data
 
 def plot_learning_curves(all_val_losses, title="Model Performance", save_path="learning_curves.png"):
-    plt.figure(figsize=(8, 4))
+    plt.figure(figsize=(6, 4))
     for model_name, val_losses in all_val_losses.items():
         if val_losses and not all(np.isnan(val_losses)): # Check if list is not empty and not all NaNs
-            plt.plot(val_losses, label=f"{model_name} Val Loss", lw = 2)
+            plt.plot(val_losses, label=f"{model_name} Val Loss", lw = 3)
         else:
             print(f"Skipping plotting for {model_name} due to empty or all-NaN loss data.")
     

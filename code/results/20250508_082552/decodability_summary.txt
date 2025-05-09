@@ -1,0 +1,8 @@
+Model,R2_Score
+ComplexOscillatorNet,0.0197
+RNN_GRU,-0.0138
+Transformer,-0.0607
+HIPPORNN_LegT,0.0255
+NMRNN_Spatial_ModReadout,-0.0514
+NMRNN_NoSpatial_ModReadout,-0.0950
+NMRNN_Spatial_FixedReadout,-0.0601
